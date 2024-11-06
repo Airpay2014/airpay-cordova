@@ -17,31 +17,24 @@ This is the official Cordova plugin for integrating Airpay payment gateway into 
 ## Installation
 
 Note: For Windows users, please run the following commands on Git Bash instead of Command Prompt. You can download Git for Windows here.
-
+  
 Navigate to your project directory:
 
+```
 cd your-project-folder
+```
 
 Add the necessary platforms:
 
+```
 cordova platform add android
+```
 
 Install the Airpay plugin:
 
+```
 cordova plugin add https://github.com/Airpay2014/airpay-cordova.git#master 
- 
-### Dependencies
- 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-
-* ex. Windows 10
- 
-### Installing
- 
-* How/where to download your program
-
-* Any modifications needed to be made to files/folders
- 
+``` 
 ### Executing program
  
  The following Android files are crucial for the Airpay Cordova integration and ensure seamless functionality:
@@ -322,8 +315,8 @@ implementation("com.airpay:Airpay-India-Kit:--version") {
             String sPassword = ""; // Please enter Password
 
 
-.setSuccessUrl("https://apple.nowpay.co.in/airpay_php_v3/responsefromairpay.php") // Please enter Success URL
-.setFailedUrl("https://apple.nowpay.co.in/airpay_php_v3/responsefromairpay.php") // Please enter Failed URL
+.setSuccessUrl("") // Please enter Success URL
+.setFailedUrl("") // Please enter Failed URL
                     
 ```
  Note :- For above merchant configuration details, Kindly contact with Airpay Support Team.
