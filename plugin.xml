@@ -9,15 +9,6 @@
 
     <platform name="android">
 
-    <source-file src="libs/mylibrary.aar" target-dir="libs/" framework="true" />
-    <!-- <config-file parent="/*" target="app/build.gradle">
-            <dependency>
-                <groupId>com.yourlibrary</groupId>
-                <artifactId>yourlibrary</artifactId>
-                <version>1.0.0</version>
-            </dependency>
-        </config-file> -->
-
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="MyPlugin">
                 <param name="android-package" value="com.example.myPlugin.MyPlugin"/>
