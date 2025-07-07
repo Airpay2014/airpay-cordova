@@ -292,14 +292,16 @@ implementation("com.airpay:Airpay-India-Kit:--version") {
    Specifies repositories for dependency management.
    For Username and Password, kindly refer the kit on sanctum portal link -  	
 ```
- maven { url 'https://maven.google.com'
-    }
-    maven {  url'https://gitlab.com/api/v4/projects/60989340/packages/maven'
-        name = "GitLab"
-        credentials {
-            username = "" //Enter Username
-            password = "" //Enter Access Token 
+  maven {
+        url "https://gitlab.com/api/v4/projects/60989340/packages/maven"
+        credentials(HttpHeaderCredentials) {
+            name = ""
+            value = ""
         }
+        authentication {
+            header(HttpHeaderAuthentication)
+        }
+
     }
 
 ```
